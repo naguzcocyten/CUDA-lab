@@ -1,3 +1,4 @@
+
 # ECU2
 En esta práctica utilizamos CUDA en Python con la librería Numba. En este ejercicio el objetivo es entender mejor cómo se organizan los hilos y los bloques dentro de la GPU y cómo se calcula el identificador global de cada hilo.
 
