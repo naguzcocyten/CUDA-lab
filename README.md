@@ -1,4 +1,5 @@
-#ECU1
+# ECU1
+
 Este ejemplo corresponde a mis primeras prácticas utilizando CUDA en Python con la librería Numba. El propósito principal es comenzar a familiarizarme con el procesamiento en GPU y entender la estructura básica que se requiere para ejecutar un kernel.
 
 El programa hace lo siguiente:
