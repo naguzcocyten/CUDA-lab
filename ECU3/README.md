@@ -12,3 +12,5 @@ Escalamiento de una matriz grande, multiplicando cada elemento por un escalar y 
 Una implementación ingenua de multiplicación de matrices, donde cada hilo calcula un elemento de la matriz resultado y se contrasta el desempeño con la operación equivalente usando NumPy.
 
 Un ejemplo de procesamiento de imágenes con el filtro de bordes de Sobel, aplicado a una imagen de alta resolución. Se calculan los bordes tanto en GPU como con OpenCV en CPU y se comparan los tiempos y la similitud de los resultados.
+
+# Todos los codigos de este Branch es necesario primero correr cuda_enviorement.py 
