@@ -1,3 +1,4 @@
+
 # ECU 3
 Este branch reúne varias prácticas de CUDA en Python usando Numba orientadas a comparar el comportamiento de la GPU contra la CPU en diferentes tipos de operaciones.
 
