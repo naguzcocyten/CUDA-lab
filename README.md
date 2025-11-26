@@ -14,3 +14,7 @@ Una implementación ingenua de multiplicación de matrices, donde cada hilo calc
 Un ejemplo de procesamiento de imágenes con el filtro de bordes de Sobel, aplicado a una imagen de alta resolución. Se calculan los bordes tanto en GPU como con OpenCV en CPU y se comparan los tiempos y la similitud de los resultados.
 
 El objetivo general de este branch es seguir practicando el uso de CUDA, entender mejor cómo se configura la ejecución en la GPU y observar, de manera experimental, en qué casos la GPU ofrece una ganancia de tiempo importante frente al procesamiento tradicional en CPU.
+
+
+# Para ejecutar cualquiera de los ejemplos es necesario ejecutar el entorno de instalacion que esta en el main 
+
