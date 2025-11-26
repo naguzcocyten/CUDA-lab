@@ -1,17 +1,20 @@
 
-# ECU2
-En esta práctica utilizamos CUDA en Python con la librería Numba. En este ejercicio el objetivo es entender mejor cómo se organizan los hilos y los bloques dentro de la GPU y cómo se calcula el identificador global de cada hilo.
+# ECU 3
+Este branch reúne varias prácticas de CUDA en Python usando Numba orientadas a comparar el comportamiento de la GPU contra la CPU en diferentes tipos de operaciones.
 
-El programa hace lo siguiente:
+El código incluye los siguientes ejemplos:
 
-Define una configuración de ejecución con una malla (grid) bidimensional de bloques y un número fijo de hilos por bloque.
+Suma de vectores de gran tamaño, donde se compara el tiempo de ejecución del kernel en GPU contra la misma operación hecha con NumPy en CPU.
 
-Dentro del kernel, calcula el identificador del bloque a partir de sus coordenadas en X y Y.
+Un kernel sencillo que realiza una operación matemática por elemento (basada en raíces y potencias) para medir tiempos y ver la diferencia entre GPU y CPU.
 
-Calcula el número de hilos por bloque y el desplazamiento (offset) que aporta cada bloque.
+Escalamiento de una matriz grande, multiplicando cada elemento por un escalar y comparando de nuevo el tiempo de la GPU frente a la solución en CPU.
 
-Obtiene el identificador del hilo dentro del bloque usando las coordenadas de hilo en X y Y.
+Una implementación ingenua de multiplicación de matrices, donde cada hilo calcula un elemento de la matriz resultado y se contrasta el desempeño con la operación equivalente usando NumPy.
 
-Combina esta información para obtener el identificador global de cada hilo en toda la malla.
+Un ejemplo de procesamiento de imágenes con el filtro de bordes de Sobel, aplicado a una imagen de alta resolución. Se calculan los bordes tanto en GPU como con OpenCV en CPU y se comparan los tiempos y la similitud de los resultados.
 
-Imprime, para cada hilo, su id global, la posición del bloque, la posición del hilo dentro del bloque y las dimensiones de la malla y del bloque.
+El objetivo general de este branch es seguir practicando el uso de CUDA, entender mejor cómo se configura la ejecución en la GPU y observar, de manera experimental, en qué casos la GPU ofrece una ganancia de tiempo importante frente al procesamiento tradicional en CPU.
+
+
+# Para ejecutar cualquiera de los ejemplos es necesario ejecutar el entorno de instalacion que esta en el main 
